@@ -1,0 +1,41 @@
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(63, 6, 218);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(141, 21, 21);
+    color: #fcf9f9;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(12, 33, 12) transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .mask1 {
+    -webkit-mask-image: url(w3schools_logo_436_2.png);
+    mask-image: url(w3schools_logo_436_2.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;     
+  }
